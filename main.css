@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+*,
+*::after;
+*::before{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+	width: 1600px;
+	height: 2066px;
+	background-color: #fdfcef;
+	border: 1px solid black;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 245px 0px 245px;
+	gap: 120px;
+}
+.logo{
+	width: 1110px;
+	height: 112px;
+	font-weight: 700;
+	font-size: 25px;
+	gap: 82px;
+}
+.logo_2{
+	display: none;
+}
+.game{
+	width: 1110px;
+	height: 567px;
+	flex-direction: column;
+	display: flex;
+}
+.gamecard{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.gameright{
+	display: flex;
+	width: 465px;
+	height: 465px;
+	background: linear-gradient(180deg, #FFE195 0%, #FF5B5B 100%);
+	border-radius: 70px;
+	align-items: center;
+	justify-content: center;
+}
+.cow{
+	height: 255px;
+	width: 255px;
+	transition: transform 0.4s;
+}
+.cow:hover{
+	transform: scale(1.4);
+	transition: transform 0.4s;
+}
+.gameleft{
+	width: 465px;
+	height: 389px;
+}
+.gameleft h2{
+	font-weight: 700;
+	font-size: 50px;
+}
+.gameleft h3{
+	font-weight: 500;
+	font-size: 18px;
+}
+.btn{
+	width: 227px;
+	height: 69px;
+	background: #FF6861;
+	border-radius: 100px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.about{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	width: 720px;
+	height: 442px;
+	gap: 70px;
+}
+.about h2{
+	font-weight: 700;
+	font-size: 40px;
+	margin: 0;
+}
+.sp{
+	display: flex;
+	flex-direction: column;
+	gap: 41px;
+}
+.punkt{
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	gap: 42px;
+	width: 720px;
+}
+.ptext{
+	display: flex;
+	flex-direction: column;
+	width: 613px;
+	height: 78px;
+	gap: 11px;
+}
+.pimg{
+	width: 73px;
+	height: 73px;
+	transition: transform 0.4s;
+}
+.pimg:hover{
+	transform: scale(1.4);
+	transition: transform 0.4s;
+}
+.punkt h3{
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0;
+
+}
+.punkt h4{
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0;
+}
+.advert{
+	width: 1110px;
+	height: 486px;
+	background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+	border-radius: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.advert_right{
+	display: flex;
+	width: 287px;
+	height: 287px;
+	justify-content: center;
+	align-items: center;
+	margin-right: 125px;
+}
+.bittle{
+	transition: transform 0.4s;
+}
+.bittle:hover{
+	transform: scale(1.4);
+	transition: transform 0.4s;
+}
+.advert_left{
+	/* display: flex; */
+	flex-direction: column;
+	width: 475px;
+	height: 335px;
+	margin-left: 122px;
+	margin-top: 76px;
+}
+.advert_left h2{
+	font-weight: 700;
+	font-size: 40px;
+	margin: 0;
+}
+.advert_left h3{
+	font-weight: 500;
+	font-size: 18px;
+}
+.arr{
+	font-weight: 500;
+	font-size: 15px;
+}
+@media (max-width: 720px) {
+	.wrapper{
+		width: 720px;
+		height: 100vh;
+		background-color: #fdfcef;
+		border: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+	.logo{
+		width: 176px;
+		font-weight: 700;
+		font-size: 25px;
+	}
+	.logo_2{
+	display: none;
+	}
+	.game{
+		width: 720px;
+		height: 919px;
+		display: flex;
+		align-items:center;
+	}
+	.gamecard{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.gameleft{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 720px;
+		height: 367px;
+	}
+	.gameleft h2{
+		text-align: center;
+	}
+	.gameleft h3{
+		text-align: center;
+	}
+	.ptext{
+		display: flex;
+		flex-direction: column;
+		width: 613px;
+		height: 78px;
+		gap: 11px;
+	}
+	.pimg{
+		width: 73px;
+		height: 73px;
+	}
+	.advert{
+		width: 720px;
+		height: 925px;
+		flex-direction: column-reverse;
+	}
+	.advert_right{
+		margin: 0;
+		padding-top: 101px;
+	}
+	.advert_left{
+		display: flex;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+		padding: 50px;
+	}
+	.advert_left h2{
+		text-align: center;
+	}
+	.advert_left h3{
+		text-align: center;
+	}
+@media (max-width: 360px) {
+	.wrapper{
+		width: 360px;
+		height: 100vh;
+		background-color: #fdfcef;
+		border: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 90px;
+	}
+	.logo_2{
+		display: initial;
+		width: 133px;
+		height: 112px;
+		font-weight: 700;
+		font-size: 25px;
+	}
+	.logo{
+		display: none;
+	}
+	.game{
+		width: 360px;
+		height: 919px;
+		display: flex;
+		align-items:center;
+	}
+	.gamecard{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.gameleft{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 320px;
+		height: 528px;
+	}
+	.gameright{
+		width: 320px;
+		height: 320px;
+	}
+	.gameright img{
+		width: 175px;
+		height: 175px;
+	}
+	.gameleft h2{
+		text-align: center;
+	}
+	.gameleft h3{
+		text-align: center;
+	}
+	.about{
+		width: 320px;
+		height: 1000px;
+	}
+	.sp{
+		width: 320px;
+		gap:85px;
+	}
+	.punkt{
+		flex-direction: column;
+		width: 320px;
+		align-items: center;
+	}
+	.ptext{
+		display: flex;
+		flex-direction: column;
+		width: 307px;
+		height: 78px;
+		gap: 11px;
+	}
+	.pimg{
+		width: 73px;
+		height: 73px;
+	}
+	.punkt h3{
+		text-align: center;
+	}
+	.punkt h4{
+		text-align: center;
+	}
+	.advert{
+		width: 320px;
+		height: 925px;
+		flex-direction: column-reverse;
+	}
+	.advert_right{
+		margin: 0;
+		padding-top: 70px;
+	}
+	.bittle{
+		width: 201px;
+		height: 201px;
+	}
+	.advert_left{
+		display: flex;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+		padding: 50px;
+		height: 400px;
+	}
+	.advert_left h2{
+		text-align: center;
+		width: 275px;
+	}
+	.advert_left h3{
+		text-align: center;
+		width: 275px;
+	}
